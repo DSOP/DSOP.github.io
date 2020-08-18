@@ -1,15 +1,96 @@
+/* Section colors */
+:root {
+  --purple: #553573;
+  --green: #71b44c;
+  --backgroundpurple: #322f36;
+  --foregroundpurple: #3a363f;
+  --offwhite: #faefec;t
+}
+
+.bg-dark {
+  background-color: var(--backgroundpurple);
+}
+
 body {
-  background-color: darkslategrey;
+  background-color: var(--backgroundpurple);
 }
 
-header.slimegreen {
-  background-color: greenyellow;
+.slimegreen {
+  background-color: var(--green);
 }
 
-div.slimepurple {
-  background-color: purple;
+.slimepurple {
+  background-color: var(--purple);
 }
 
 div.grey {
-  background-color: grey;
+  background-color: var(--foregroundpurple);
+}
+
+.deeppurple {
+  background-color: var(--backgroundpurple);
+}
+
+.offwhite {
+  background-color: var(--offwhite);
+  color: var(--backgroundpurple);
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Kapra Neue Pro Light Exp Rd';
+  src: url('fonts/KapraNeuePro-LightExpRd.woff2') format('woff2'),
+      url('fonts/KapraNeuePro-LightExpRd.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kapra Neue Pro Exp Rd';
+  src: url('fonts/KapraNeuePro-BoldExpRd.woff2') format('woff2'),
+      url('fonts/KapraNeuePro-BoldExpRd.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* section formatting */
+.v-align {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+}
+
+/* font choices */
+h1, h2 {
+  font-family: 'Kapra Neue Pro Exp Rd';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Kapra Neue Pro Light Exp Rd';
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* font sizes and colors */
+
+body {
+  color: white;
+}
+
+h1 {
+  font-size: 58pt;
+}
+h1.no-padding {
+  margin-top: 5px;
+}
+
+
+/* alignment */
+.center-text {
+  text-align: center;
 }
