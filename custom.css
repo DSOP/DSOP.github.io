@@ -23,7 +23,7 @@ body {
   background-color: var(--purple);
 }
 
-div.grey {
+.grey {
   background-color: var(--foregroundpurple);
 }
 
@@ -56,11 +56,52 @@ div.grey {
 }
 
 /* section formatting */
+body 
+{
+  overflow-x: hidden;
+}
+
 .v-align {
   margin-top: auto;
   margin-bottom: auto;
   height: auto;
 }
+
+.tab-right {
+  z-index: 3;
+  border: 0px;
+  position: relative;
+  background-color: var(--foregroundpurple);
+}
+.tab-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:80%;
+  right:-3000px;
+  z-index: -1;
+  background-color: var(--foregroundpurple);
+}
+
+.tab-left {
+  z-index: 3;
+  border: 0px;
+  position: relative;
+  background-color: var(--foregroundpurple);
+}
+.tab-left:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:20%;
+  left:-3000px;
+  z-index: -1;
+  background-color: var(--foregroundpurple);
+}
+
+
 
 /* font choices */
 h1, h2 {
