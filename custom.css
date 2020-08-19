@@ -60,6 +60,11 @@ body {
   overflow-x: hidden;
 }
 
+.h-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .v-align {
   margin-top: auto;
   margin-bottom: auto;
