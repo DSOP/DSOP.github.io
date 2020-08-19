@@ -4,7 +4,7 @@
   --green: #71b44c;
   --backgroundpurple: #322f36;
   --foregroundpurple: #3a363f;
-  --offwhite: #faefec;t
+  --offwhite: #faefec;
 }
 
 .bg-dark {
@@ -38,26 +38,25 @@ body {
 
 /* fonts */
 @font-face {
-  font-family: 'Kapra Neue Pro Light Exp Rd';
-  src: url('fonts/KapraNeuePro-LightExpRd.woff2') format('woff2'),
-      url('fonts/KapraNeuePro-LightExpRd.woff') format('woff');
+  font-family: "Kapra Neue Pro Light Exp Rd";
+  src: url("fonts/KapraNeuePro-LightExpRd.woff2") format("woff2"),
+    url("fonts/KapraNeuePro-LightExpRd.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Kapra Neue Pro Exp Rd';
-  src: url('fonts/KapraNeuePro-BoldExpRd.woff2') format('woff2'),
-      url('fonts/KapraNeuePro-BoldExpRd.woff') format('woff');
+  font-family: "Kapra Neue Pro Exp Rd";
+  src: url("fonts/KapraNeuePro-BoldExpRd.woff2") format("woff2"),
+    url("fonts/KapraNeuePro-BoldExpRd.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 /* section formatting */
-body 
-{
+body {
   overflow-x: hidden;
 }
 
@@ -74,12 +73,12 @@ body
   background-color: var(--foregroundpurple);
 }
 .tab-right:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left:80%;
-  right:-3000px;
+  left: 80%;
+  right: -3000px;
   z-index: -1;
   background-color: var(--foregroundpurple);
 }
@@ -91,28 +90,27 @@ body
   background-color: var(--foregroundpurple);
 }
 .tab-left:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  right:20%;
-  left:-3000px;
+  right: 20%;
+  left: -3000px;
   z-index: -1;
   background-color: var(--foregroundpurple);
 }
 
-
-
 /* font choices */
-h1, h2 {
-  font-family: 'Kapra Neue Pro Exp Rd';
+h1,
+h2 {
+  font-family: "Kapra Neue Pro Exp Rd";
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: 'Kapra Neue Pro Light Exp Rd';
+  font-family: "Kapra Neue Pro Light Exp Rd";
   font-weight: 300;
   font-style: normal;
 }
@@ -130,8 +128,22 @@ h1.no-padding {
   margin-top: 5px;
 }
 
-
 /* alignment */
 .center-text {
   text-align: center;
+}
+
+/* social media buttons */
+.social-button {
+  color: #ffffff;
+  font-size: 50px;
+  padding: 40px 50px 40px 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  border: 0px;
+}
+
+.social-button:hover {
+  text-decoration: none;
 }
