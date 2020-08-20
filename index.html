@@ -22,6 +22,7 @@
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="custom.css" rel="stylesheet" />
+    <link href="slime.css" rel="stylesheet">
     <link rel="icon" href="./img/sop-logo-small.png" />
   </head>
 
@@ -90,7 +91,7 @@
     </header>
 
     <!-- Purple Header -->
-    <header class="slimepurple py-5 mb-5">
+    <header class="slimepurple pt-5">
       <div class="container h-100">
         <!-- about us -->
         <div class="row slimepurple">
@@ -99,6 +100,7 @@
               class="card-img-top animate__animated animate__rubberBand animate__slow animate__infinite"
               src="./img/sop-octo-cube-green.png"
               alt=""
+              style="z-index: 100; position: relative;"
             />
           </div>
 
@@ -112,6 +114,14 @@
         </div>
       </div>
     </header>
+
+    <!-- Slime! -->
+    <div class="backgroundBox mb-5">
+      <div class= "slimeBox">
+        <div class="dropBody"></div>
+        <div class="rain front-row"></div>
+      </div>
+    </div>
 
     <!-- Page Content -->
     <div class="container">
@@ -255,9 +265,23 @@
       <!-- /.container -->
     </footer>
 
+    
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="fancy-goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </defs>
+    </svg>
+
     <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="slime.js"></script>
   </body>
 </html>
 
