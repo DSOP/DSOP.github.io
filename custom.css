@@ -126,7 +126,6 @@ body {
   margin-top: 75px;
 }
 
-
 /* font choices */
 h1,
 h2 {
@@ -172,5 +171,15 @@ h1.no-padding {
 }
 
 .social-button:hover {
+  cursor: pointer;
   text-decoration: none;
+}
+
+.nav-item.whitebutton {
+  background: white;
+  border-radius: 5px;
+}
+
+.nav-link.whitebutton {
+  color: var(--green) !important;
 }
