@@ -126,7 +126,6 @@ body {
   margin-top: 75px;
 }
 
-
 /* font choices */
 h1,
 h2 {
@@ -172,5 +171,6 @@ h1.no-padding {
 }
 
 .social-button:hover {
+  cursor: pointer;
   text-decoration: none;
 }
