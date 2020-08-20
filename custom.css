@@ -71,6 +71,7 @@ body {
   height: auto;
 }
 
+/*
 .tab-right {
   z-index: 3;
   border: 0px;
@@ -104,6 +105,27 @@ body {
   z-index: -1;
   background-color: var(--foregroundpurple);
 }
+*/
+
+/* button */
+.chonky-button {
+  font-size: 38pt;
+  padding: 20px 40px;
+  border-width: 4px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  font-family: "Kapra Neue Pro Exp Rd";
+}
+
+.boundry-break {
+  margin-bottom: -75px;
+}
+
+.rebuild-boundary {
+  margin-top: 75px;
+}
+
 
 /* font choices */
 h1,
