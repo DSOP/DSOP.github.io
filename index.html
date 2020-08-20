@@ -22,7 +22,7 @@
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="custom.css" rel="stylesheet" />
-    <link href="slime.css" rel="stylesheet">
+    <link href="slime.css" rel="stylesheet" />
     <link rel="icon" href="./img/sop-logo-small.png" />
   </head>
 
@@ -52,9 +52,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="#cabinet">Arcade Cabinet</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item whitebutton">
               <a
-                class="nav-link"
+                class="nav-link whitebutton"
                 href="https://www.patreon.com/societyofplay?fan_landing=true"
                 >Patreon</a
               >
@@ -126,7 +126,7 @@
 
     <!-- Slime! -->
     <div class="backgroundBox mb-5">
-      <div class= "slimeBox">
+      <div class="slimeBox">
         <div class="dropBody"></div>
         <div class="rain front-row"></div>
       </div>
@@ -307,20 +307,27 @@
       <!-- /.container -->
     </footer>
 
-    
-
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <filter id="fancy-goo">
           <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
         </filter>
       </defs>
     </svg>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="slime.js"></script>
