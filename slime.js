@@ -2,10 +2,10 @@ var makeItRain = function() {
   //clear out everything
   $('.rain').empty();
 
-  var increment = 0;
+  var increment = 5;
   var drops = "";
 
-  while (increment < 100) {
+  while (increment < 95) {
     //couple random numbers to use for various randomizations
 
     var randoHundo = ((Math.random() * (15) + 5));
