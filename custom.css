@@ -11,6 +11,10 @@
   background-color: var(--backgroundpurple);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--backgroundpurple);
 }
@@ -116,6 +120,24 @@ body {
   background-color: transparent;
   color: white;
   font-family: "Kapra Neue Pro Exp Rd";
+}
+
+.chonky-button-sm {
+  font-size: 18pt;
+  padding: 10px 20px;
+  border-width: 4px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  font-family: "Kapra Neue Pro Exp Rd";
+}
+
+.foreground {
+  z-index: 100; position: relative;
+}
+
+.foreground-more {
+  z-index: 120; position: relative;
 }
 
 .boundry-break {
