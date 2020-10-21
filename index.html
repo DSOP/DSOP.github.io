@@ -24,6 +24,53 @@
     <link href="custom.css" rel="stylesheet" />
     <link href="slime.css" rel="stylesheet" />
     <link rel="icon" href="./img/sop-logo-small.png" />
+
+    <!--Calendar-->
+    <link href="jquery.gcal_flow.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      _gCalFlow_debug = true;
+    </script>
+    <script type="text/javascript" src="jquery.gcal_flow.js"></script>
+    <script type="text/javascript">
+      var $ = jQuery;
+      $(function() {
+        $('#gcf-simple').gCalFlow({
+          calid: 'p7r7thdbivjgnq4ugptjv53r7c@group.calendar.google.com'
+        });
+      });
+    </script>
+    
+    <style>
+      .gCalFlow {
+        width: 100%;
+      }
+      .gcf-header-block {
+        display:none;
+      }
+      .gcf-last-update-block {
+        display: none;
+      }
+      .gcf-item-container-block {
+        height: 100% !important;
+      }
+      .gcf-item-date-block {
+        font-size: 18pt !important;
+        font-family: "Kapra Neue Pro Light Exp Rd";
+        font-weight: 300;
+        font-weight: normal !important;
+      }
+      .gcf-item-title {
+        font-size: 20pt;
+        font-family: "Kapra Neue Pro Light Exp Rd";
+        font-weight: 300;
+        font-weight: bold !important;
+      }
+      .gcf-item-description {
+        display: none;
+      }
+    </style>      
+
   </head>
 
   <body>
@@ -73,13 +120,13 @@
               Our next event is...
             </h3>
             <h1 class="center-text no-padding">
-              MICRO TALKS, OCTOBER 3RD
+              REVIVAL JAM, OCTOBER 14-25th
             </h1>
             <p class="lead mb-5">
-              GameDev Rants! On October 3rd, local devs give 2-15 minute talks on whatever's been on their minds! Educational, cathartic, and fun! Art, code, production, business, sound, opinions... Anything goes!
+              <b>Dredge up an unfinished/unmade idea or project and... REVIVE IT!</b> This jam is all about finishing those old abandoned projects or finally making that one idea that you've been holding onto!
             </p>
             <div class="d-flex justify-content-center">
-              <a href="https://www.meetup.com/Society-of-Play/events/273420458/"
+              <a href="https://itch.io/jam/society-of-plays-spooky-jam"
                 ><button type="button" class="btn btn-light chonky-button">
                   CHECK OUT THE EVENT
                 </button></a
@@ -289,7 +336,7 @@
         </div>
       </div>
 
-      <!-- $$$ 🤑 $$$ -->
+      <!-- Patreon -->
       <div class="row center-text boundry-break">
         <div class="col-md-12 p-0">
           <div class="d-flex justify-content-between">
@@ -316,12 +363,38 @@
     <!-- Footer -->
     <footer class="py-5 offwhite">
       <div class="container rebuild-boundary">
+
+        
+      <!-- A dev group for everyone -->
+      <div class="row mb-5">
+        <div class="col-md-6 py-4 text-center">
+          <h2>UPCOMING DFW EVENTS</h2>
+          <h3>(By us and other local orgs!)</h3>
+          <!-- Calendar -->
+          <div id="gcf-simple">  
+          </div>
+        </div>
+        <div class="col-md-6 p-4 text-center">
+          <h2>A SINGLE TWEET!</h2>
+          <h3>(Only one! Don't get greedy.)</h3>
+          <!-- Twitter -->
+          <a class="twitter-timeline" 
+          data-lang="en" data-dnt="true" data-theme="light" 
+          data-tweet-limit="1"
+          data-chrome="transparent noborders noheader noscrollbar nofooter"
+          href="https://twitter.com/SocietyOfPlay?ref_src=twsrc%5Etfw">Tweets by SocietyOfPlay</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <!-- /.row -->
+
+	  
+        
         <!-- Rebuild boundary from the prev boundry-break here -->
         <p class="m-0 text-center">
-          &copy; 2020 SOCIETY OF PLAY
+          &copy; 2020 SOCIETY OF PLAY.
         </p>
       </div>
-      <!-- /.container -->
+    <!-- /.container -->
     </footer>
 
     <!-- ARCADE MODAL -->
@@ -448,12 +521,7 @@
     </svg>
 
     <!-- Bootstrap core JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="jquery.gcal_flow.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="slime.js"></script>
   </body>
